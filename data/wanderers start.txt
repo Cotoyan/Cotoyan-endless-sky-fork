@@ -2269,6 +2269,7 @@ mission "Wanderers Rek 0"
 				`	"Rek, when did you learn to speak my language?"`
 			`	He makes a sound halfway between a laugh and a cough, and says, "Even as my body decays, my mind has grown sharper. The more I listened to your box speaking to you, the more its words began to make sense to me."`
 			`	He seems too tired to answer any more questions. You make sure Rek is comfortable in one of your bunk rooms, then prepare to travel to <planet>.`
+				`	(Ignore it)`
 				accept
 	on visit
 		dialog `You land on <planet>, but realize that your escort carrying Iktat Rek hasn't entered the system yet. Better depart and wait for it to arrive.`
@@ -2308,13 +2309,13 @@ mission "Wanderers Rek 2"
 	on offer
 		event "wanderers: more systems lost"
 		conversation
-			`When you arrive, you can tell that the locals are agitated about something. Finally one of them switches into the Hai language and explains to you what is going on. "We have just heard that the Unfettered have [stolen, captured] three more of our worlds," he says, "but do not tell Rek the news."`
-			`	You visit Iktat Rek and tell him that you found nothing out of the ordinary in the Sko'karak system. He barely even opens his eyes as you speak to him. "Go back and look again," he says.`
+			`When you arrive, you can tell that the locals are agitated about something. Finally one of them switches into the Hai language and explains to you what is going on. "We have just heard that the Unfettered have [stolen, captured] three more of our worlds," she says, "but do not tell Rek the news."`
+			`	You visit Iktat Rek and tell him that you found nothing out of the ordinary in the Sko'karak system. He barely opens his eyes as you speak to him. "Go back and look again," he urges. He shakes his head back and forth with the small amount of strength he can muster. He squints, staring at you pleadingly before continuing, "please go back."`
 			choice
 				`	"Okay, I'll go and look again."`
 					accept
 				`	"You should know, another three systems were lost to the Unfettered."`
-			`	He sighs. "If the Eye would only open, it would not matter. I do not understand why the keepers of the portal will not open it and let us flee from this war into a place of safety. Go again to Sko'karak, and look."`
+			`	He closes his eyes with a sigh. "If the Eye would only open, it would not matter. I do not understand why the keepers of the portal will not open it and let us flee from this war into a place of safety. Go again to Sko'karak, and look."`
 				accept
 	on enter "Sko'karak"
 		dialog
@@ -2338,12 +2339,12 @@ mission "Wanderers Rek 3"
 			`When you enter the spaceport, a white-plumed Wanderer who looks eerily similar to Rek comes out of the hospital to meet you. For a brief confused moment you wonder if Rek has indeed completed the Molt and is now standing before you healed, then she introduces herself as Melaka Esta'a, Rek's mother. "Rek is asleep," she says. "Do you bring good news?"`
 			choice
 				`	"No, I found nothing."`
-			`	She says, "Rek's body is destroying itself [fighting, resisting] the Molt. Soon we must give him the drugs that will [disable, eliminate] his immune system and allow the new cells to finish their [conquest, invasion] of his body. For that treatment he must enter [seclusion, isolation] to protect him from infection. But he will not go until you bring him the [word, news] he awaits."`
+			`	She winces at your statement before she continues, "Rek's body is destroying itself [fighting, resisting] the Molt. Soon we must give him the drugs that will [disable, eliminate] his immune system and allow the new cells to finish their [conquest, invasion] of his body." Rek's mother pauses for a moment and says, "For that treatment he must enter [seclusion, isolation] to protect him from infection. But he will not go until you bring him the [word, news] he awaits."`
 			choice
-				`	"I will go back one more time and see if anything has changed."`
+				`	"I will go back again and see if anything has changed."`
 					accept
 				`	"Should I lie to him and say the Eye is open?"`
-			`	"No," she says, "go back one more time and look. If there is still nothing, we will [decide, consider] what to do next."`
+			`	"No," she says, "go back one more time and look. If there is still nothing, we will be compelled to [decide, consider] what to do next."`
 				accept
 	on enter "Sko'karak"
 		dialog
